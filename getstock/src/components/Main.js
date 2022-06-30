@@ -19,6 +19,7 @@ export default Main;
 const MainStyle = styled.section`
   border: 10px solid;
   display: grid;
+  width: 90%;
 `;
 const Infos = styled.article`
   display: flex;

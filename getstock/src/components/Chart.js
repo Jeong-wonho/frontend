@@ -8,6 +8,7 @@ export default Chart;
 
 const StockChart = styled.article`
   width: 100%;
+  box-sizing: border-box;
   border: 5px solid white;
   background: skyblue;
 `;
