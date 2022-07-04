@@ -1,7 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style></style>
+    <style>
+      p {
+        font-size: 2em;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .light {
+        font-weight: lighter;
+      }
+      .thick {
+        font-weight: bold;
+      }
+
+      .thicker {
+        font-weight: 900;
+      }
+
+      .small {
+        line-height: 70%;
+      }
+
+      .big {
+        line-height: 1.2;
+      }
+
+      .lh-3x {
+        line-height: 3;
+      }
+
+      .button {
+        width: 150px;
+        height: 70px;
+        background-color: #ff6a00;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px #a9a9a9;
+      }
+
+      .button > a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font: italic bold 2em/70px Arial, Helvetica, sans-serif;
+      }
+
+      .loose {
+        letter-spacing: 2px;
+      }
+      .tight {
+        letter-spacing: -1px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>font-family</h1>
+    <p class="serif">Times New roman font.</p>
+    <p class="sans-serif">Arial font.</p>
+    <p class="monospace">Courier New font.</p>
+
+    <p>normal style.</p>
+    <p class="italic">font-style: italic</p>
+
+    <p class="light">font-weight: lighter</p>
+    <p class="thick">font-weight : bold</p>
+    <p class="thicker">font-weight: 900</p>
+
+    <hr />
+    <h1>line-height property</h1>
+    <p>
+      defalt line-height.<br />
+      default line-height.<br />
+      대부분의 브라우저의 default line height 는 110% ~ 120%.
+    </p>
+
+    <p class="small">
+      line-height: 70%<br />
+      line-height: 70%<br />
+    </p>
+
+    <p class="big">
+      line-height:1.2<br />
+      line-height: 70%<br />
+    </p>
+
+    <p class="lh-3x">
+      line-height: 3.0<br />
+      line-height: 3.0<br />
+    </p>
+    <div class="button">
+      <a href="#">Click</a>
+    </div>
+    <hr />
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+    <p class="loose">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
+      repellat veritatis illo earum, illum id odio, temporibus
+    </p>
+    <p class="tight">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam
+      laudantium voluptates ex quos ipsam sint soluta
+    </p>
+  </body>
 </html>
