@@ -1,106 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      p {
-        font-size: 2em;
-      }
-      .italic {
-        font-style: italic;
-      }
-      .light {
-        font-weight: lighter;
-      }
-      .thick {
-        font-weight: bold;
-      }
-
-      .thicker {
-        font-weight: 900;
-      }
-
-      .small {
-        line-height: 70%;
-      }
-
-      .big {
-        line-height: 1.2;
-      }
-
-      .lh-3x {
-        line-height: 3;
-      }
-
-      .button {
-        width: 150px;
-        height: 70px;
-        background-color: #ff6a00;
-        border-radius: 30px;
-        box-shadow: 5px 5px 5px #a9a9a9;
-      }
-
-      .button > a {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        font: italic bold 2em/70px Arial, Helvetica, sans-serif;
-      }
-
-      .loose {
-        letter-spacing: 2px;
-      }
-      .tight {
-        letter-spacing: -1px;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
   </head>
   <body>
-    <h1>font-family</h1>
-    <p class="serif">Times New roman font.</p>
-    <p class="sans-serif">Arial font.</p>
-    <p class="monospace">Courier New font.</p>
-
-    <p>normal style.</p>
-    <p class="italic">font-style: italic</p>
-
-    <p class="light">font-weight: lighter</p>
-    <p class="thick">font-weight : bold</p>
-    <p class="thicker">font-weight: 900</p>
-
-    <hr />
-    <h1>line-height property</h1>
-    <p>
-      defalt line-height.<br />
-      default line-height.<br />
-      대부분의 브라우저의 default line height 는 110% ~ 120%.
-    </p>
-
-    <p class="small">
-      line-height: 70%<br />
-      line-height: 70%<br />
-    </p>
-
-    <p class="big">
-      line-height:1.2<br />
-      line-height: 70%<br />
-    </p>
-
-    <p class="lh-3x">
-      line-height: 3.0<br />
-      line-height: 3.0<br />
-    </p>
-    <div class="button">
-      <a href="#">Click</a>
+    <div class="container-xl">
+      <div
+        class="title"
+        style="
+          text-align: center;
+          border-bottom: 2px solid #0033cc;
+          margin: 2rem auto;
+          padding-bottom: 2rem;
+          width: 500px;
+        "
+      >
+        <h1>공지사항</h1>
+      </div>
+      <div class="row g-3 justify-content-end">
+        <div class="col-auto">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            style="width: 110px"
+          >
+            <option selected value="all">전체</option>
+            <option value="emc">긴급</option>
+            <option value="user">사용자 등록</option>
+            <option value="in">입실</option>
+            <option value="out">퇴실</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <input
+            type="text"
+            class="form-control"
+            name="searchText"
+            value="검색어를 입력해주세요"
+          />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">검색</button>
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">등록</button>
+        </div>
+      </div>
+      <div class="main-table justify-content-center" style="text-align: center">
+        <table
+          class="table table-hover"
+          style="border-bottom: 1px solid #0033cc"
+        >
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+              <th scope="col">수정</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>
+                <button class="btn btn-primary">수정</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>
+                <button class="btn btn-primary">수정</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>
+                <button class="btn btn-primary">수정</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>
+                <button class="btn btn-primary">수정</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>
+                <button class="btn btn-primary">수정</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>
+                <button class="btn btn-primary">수정</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="justify-content-center" style="display: flex">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-    <hr />
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
-    <p class="loose">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
-      repellat veritatis illo earum, illum id odio, temporibus
-    </p>
-    <p class="tight">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam
-      laudantium voluptates ex quos ipsam sint soluta
-    </p>
   </body>
 </html>
